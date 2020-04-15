@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.left{float: left;}
+.right{float: right;}
+.clear{clear: both}
+.container{width: 80%; margin: 0px auto;}
+.head .container .reg .right
+{
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px 0px ;
+}
+.head .container .reg .right button
+{
+    border: none;
+    background: none;
+}
+.head .container .reg .right button a{text-decoration: none;color: #585858;font-weight: bold;font-style: italic}
+
+.hhead .container .nav{padding: 5px;color: #fff}
+.hhead .container .nav .left
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+}
+.hhead .container .nav .left span{color: orange}
+.hhead
+{
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+}
+.hhead .container .nav ul
+{
+    list-style: none;
+    padding: 10px;
+}
+.hhead .container .nav ul li
+{
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+}
+.hhead .container .nav ul li a
+{
+    text-decoration: none;
+    color: rgba(255,255,255,.5);
+    font-weight: bold;
+}
+.hhead .container .nav ul li a:before
+{
+    content: attr(data-text);
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: -3px;
+    color: #fff;
+    width: 0%;
+    overflow: hidden;
+    border-top: 3px solid orange;
+    white-space: nowrap;
+}
+
+.hhead .container .nav ul li a:hover:before{width: 100%;transition: all .5s ease;}
+.hhead .container .nav ul li:hover
+{
+    transition: all 1s ease;
+}
+.hhead .container .nav ul li #active{border-top: 3px solid orange;color:#fff}
+
+.pd .container .father
+{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.pd .container .father .child
+{
+    text-align: center;
+    width: 29.33333%;
+    float: left;
+    display: inline-block;
+    border: 1px solid #5c5c5c;
+    border-radius: 15px;
+    padding: 10px;
+    height: 350px;
+    margin: 2%;
+    position: relative;
+    overflow: hidden;
+}
+.pd .container .father .child:hover{transform: scale(1.1,1.1);transition: ease transform .8s}
+.pd .container .father .child img{position: absolute;top: 0%;left: 0%;width: 100%;height: 100%;}
+.pd .container .father .child .text
+{
+    text-transform: capitalize;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    text-align: center;
+    padding-top: 25%;
+    line-height: 1.5;
+    font-size: 18px;
+    opacity: 0;
+    color: rgb(225, 59, 0);
+    transition: ease opacity .5s;
+}
+.pd .container .father .child .text:hover{opacity: .8;transition: ease opacity 1s ;}
+.pd .container .father .child .text button
+{
+    background: none;
+    border: 2px solid #ccc;
+    padding: 5px;
+    font-style: italic;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.pd .container .father .child .text button a{text-decoration: none;color: rgb(255, 87, 0);}
+.pd .container .father .child .text button:hover{background-color: #ccc;}
+
+.ft{background-color: black;}
+.ft .container {color: #bbbbbb;text-align: center;padding: 20px;font-style: italic}
+
+
+
+

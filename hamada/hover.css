@@ -1,0 +1,45 @@
+body
+{
+    background-color: #fff;
+    font-family: cursive;
+}
+.nav
+{
+    background-color: #000;
+}
+.nav ul
+{
+    list-style: none;
+    padding: 7px;
+    
+}
+.nav ul li
+{
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+.nav ul li a
+{
+    text-decoration: none;
+/*   opacity لازم اكتب اللون بالصيغه دي علشان الكلام التاني اللي ف الخلفيه ياخد اللون الابيض منغير */
+    color: rgba(255,255,255,.5);
+}
+.nav ul li a:before
+{
+    content: attr(data-text);
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: -3px;
+    color: #fff;
+    width: 0%;
+    overflow: hidden;
+    border-top: 3px solid orange;
+    white-space: nowrap;
+}
+.nav ul li a:hover:before{width: 100%;transition: all .8s ease;}
+.nav ul li:hover
+{
+    transition: all 1s ease;
+}
